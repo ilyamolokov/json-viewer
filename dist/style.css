@@ -1,0 +1,113 @@
+body {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0 0 0 15px;
+}
+li {
+  padding: 2px 0px;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  height: 100%;
+}
+
+#textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  font-family: monospace;
+  height: 100%;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+}
+
+#view-panel {
+  display: none;
+  flex: 1;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+#text-container,
+#view-panel {
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+span:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0px 5px;
+  border: 1px solid #80808050;
+}
+
+.number:before,
+.bigint:before {
+  background-color: #5b913b;
+}
+
+.string:before {
+  background-color: #344cb7;
+}
+
+.boolean:before {
+  background-color: #efb036;
+}
+
+.null:before,
+.undefined:before {
+  background-color: red;
+}
+
+.object:before {
+  content: "{ }";
+}
+
+.array:before {
+  content: "[ ]";
+}
+
+.object:before,
+.array:before {
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  color: #344cb7;
+}
+
+.expand {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+  gap: 5px;
+}
+

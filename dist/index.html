@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON viewer</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="page">
+      <div class="flex-row">
+        <button id="text-button">Text</button>
+        <button id="viewer-button">Viewer</button>
+        <button id="clear-all-button" onclick="jsonViewer.clearAll()">
+          Clear All
+        </button>
+      </div>
+
+      <div id="text-container">
+        <textarea autocomplete="off" id="textarea" name="textarea"></textarea>
+      </div>
+
+      <div id="view-panel"></div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./listeners.js"></script>
+  </body>
+</html>
+
